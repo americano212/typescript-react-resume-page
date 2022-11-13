@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Flag from "./Flag";
+import Flag from "./atoms/Flag";
 
 type HeaderProps = {
   language: string;

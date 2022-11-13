@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { useSelector } from "react-redux";
-import { RootState } from "../store/modules";
-import { toEnglish, toKorean } from "../store/modules/language";
+import { RootState } from "../../store/modules";
+import { toEnglish, toKorean } from "../../store/modules/language";
 import { useDispatch } from "react-redux";
 function Flag() {
   const dispatch = useDispatch();
