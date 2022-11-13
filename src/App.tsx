@@ -2,9 +2,7 @@ import React from "react";
 import "./App.css";
 
 import { useSelector } from "react-redux";
-
 import { RootState } from "./store/modules";
-
 import Header from "./components/header";
 
 function App() {
@@ -14,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <p>{language}</p>
-      <Header language={language}></Header>
+      <Header language={language} />
     </div>
   );
 }
