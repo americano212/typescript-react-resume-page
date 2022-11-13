@@ -11,12 +11,14 @@ function Header(props: HeaderProps) {
   const language = props.language;
   return (
     <div>
-      <FloatDiv>
+      <FloatLeftDiv>
         <NameText>{language === "ENG" ? "Dongjun Shin" : "신동준"}</NameText>
         <SmallText>me@dongjun.me</SmallText>
         <SmallText>Seoul, Republic of Korea</SmallText>
-      </FloatDiv>
-      <Flag />
+      </FloatLeftDiv>
+      <FloatRightDiv>
+        <Flag />
+      </FloatRightDiv>
     </div>
   );
 }
@@ -30,8 +32,12 @@ const SmallText = styled.div`
   font-size: small;
 `;
 
-const FloatDiv = styled.div`
+const FloatLeftDiv = styled.div`
   float: left;
+`;
+
+const FloatRightDiv = styled.div`
+  float: right;
 `;
 
 export default Header;

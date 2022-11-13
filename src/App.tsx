@@ -11,7 +11,6 @@ function App() {
   );
   return (
     <div className="App">
-      <p>{language}</p>
       <Header language={language} />
     </div>
   );
