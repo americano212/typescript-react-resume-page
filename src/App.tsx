@@ -13,11 +13,12 @@ interface AppBoxProps {
 
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
+  const HorizontalMargin = isMobile ? "10%" : "20%";
+
   const language = useSelector(
     (state: RootState) => state.setLanguage.language
   );
 
-  const HorizontalMargin = isMobile ? "10%" : "20%";
   return (
     <div className="App">
       <AppBox HorizontalMargin={HorizontalMargin}>
