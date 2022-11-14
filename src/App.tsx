@@ -6,6 +6,7 @@ import { RootState } from "./store/modules";
 import { Header, AboutMe } from "./components";
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
+import Educations from "./components/Educations";
 
 interface AppBoxProps {
   HorizontalMargin: string;
@@ -24,6 +25,7 @@ function App() {
       <AppBox HorizontalMargin={HorizontalMargin}>
         <Header language={language} />
         <AboutMe />
+        <Educations />
       </AppBox>
     </div>
   );
