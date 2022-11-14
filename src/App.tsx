@@ -3,10 +3,17 @@ import "./App.css";
 
 import { useSelector } from "react-redux";
 import { RootState } from "./store/modules";
-import { Header, AboutMe } from "./components";
+import {
+  Header,
+  AboutMe,
+  Educations,
+  Experience,
+  Awards,
+  Certificate,
+  TechnicalSkill,
+} from "./components";
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
-import Educations from "./components/Educations";
 
 interface AppBoxProps {
   HorizontalMargin: string;
@@ -26,6 +33,10 @@ function App() {
         <Header language={language} />
         <AboutMe />
         <Educations />
+        <Experience />
+        <Awards />
+        <Certificate />
+        <TechnicalSkill />
       </AppBox>
     </div>
   );
