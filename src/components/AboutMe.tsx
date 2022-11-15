@@ -13,7 +13,7 @@ function AboutMe() {
   return (
     <AboutMeBox>
       <TitleBox title={"ABOUT ME"} />
-      <ul>
+      <ULSmallMargin>
         <li>
           <Contents>
             {language === "ENG" ? "I am ..." : "나는 이런 사람 입니다"}
@@ -24,13 +24,18 @@ function AboutMe() {
             {language === "ENG" ? "I am ..." : "나는 이런 사람 입니다"}
           </Contents>
         </li>
-      </ul>
+      </ULSmallMargin>
     </AboutMeBox>
   );
 }
 
 const AboutMeBox = styled.div`
   padding-top: 70px;
+`;
+
+const ULSmallMargin = styled.ul`
+  margin-top: 5px;
+  margin-bottom: 5px;
 `;
 
 export default AboutMe;
