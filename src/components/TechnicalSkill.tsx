@@ -11,7 +11,7 @@ function TechnicalSkill() {
   );
   return (
     <div>
-      <TitleBox title={"AWARDSs"} />
+      <TitleBox title={"TECHNICAL SKILLS"} />
       {language}
     </div>
   );

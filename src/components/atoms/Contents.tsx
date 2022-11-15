@@ -10,6 +10,7 @@ function Contents(props: ContentsTextProps) {
 }
 
 const ContentsText = styled.div`
+  float: left;
   font-size: small;
 `;
 export default Contents;

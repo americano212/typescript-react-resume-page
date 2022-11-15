@@ -11,7 +11,7 @@ function Awards() {
   );
   return (
     <div>
-      <TitleBox title={"AWARDSs"} />
+      <TitleBox title={"AWARDS"} />
       {language}
     </div>
   );

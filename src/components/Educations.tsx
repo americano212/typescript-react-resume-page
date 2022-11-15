@@ -7,6 +7,7 @@ import TitleBox from "./atoms/TitleBox";
 import SubTitle from "./atoms/SubTitle";
 import Contents from "./atoms/Contents";
 import styled from "styled-components";
+import ContentDate from "./atoms/ContentDate";
 
 function Educations() {
   const language = useSelector(
@@ -23,7 +24,13 @@ function Educations() {
           <Contents>
             {language === "ENG"
               ? "Pursuing Bachelor’s Degree in Computer Engineering"
-              : "컴퓨터공학과 (학사) 재학중"}
+              : "컴퓨터공학과 (학사) 휴학중"}
+          </Contents>
+          <ContentDate>(2020.03 ~)</ContentDate>
+        </li>
+        <li>
+          <Contents>
+            {language === "ENG" ? "GPA: 3.3 / 4.5" : "학점: 3.3 / 4.5"}
           </Contents>
         </li>
       </ULSmallMargin>
