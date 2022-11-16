@@ -26,7 +26,7 @@ function Educations() {
               ? "Pursuing Bachelor’s Degree in Computer Engineering"
               : "컴퓨터공학과 (학사) 휴학중"}
           </Contents>
-          <ContentDate>(2020.03 ~)</ContentDate>
+          <ContentDate>(20.03 ~)</ContentDate>
         </li>
         <li>
           <Contents>
