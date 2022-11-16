@@ -29,8 +29,8 @@ const TitleText = styled.p`
 const Width100Hr = styled.hr`
   width: 100%;
   margin: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 `;
 
 export default TitleBox;
