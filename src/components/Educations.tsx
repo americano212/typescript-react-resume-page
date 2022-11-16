@@ -33,6 +33,14 @@ function Educations() {
             {language === "ENG" ? "GPA: 3.3 / 4.5" : "학점: 3.3 / 4.5"}
           </Contents>
         </li>
+        <li>
+          <Contents>
+            {language === "ENG"
+              ? "2021 President of the engineering college"
+              : "2021 공과대학 학생회장"}
+          </Contents>
+          <ContentDate>(21.01 ~ 21.12)</ContentDate>
+        </li>
       </ULSmallMargin>
     </div>
   );
