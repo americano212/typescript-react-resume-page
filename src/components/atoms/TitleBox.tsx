@@ -8,13 +8,17 @@ type TitleBoxProps = {
 function TitleBox(props: TitleBoxProps) {
   const title = props.title;
   return (
-    <div>
+    <TitleDiv>
       <Width100Hr />
       <TitleText>{title}</TitleText>
       <Width100Hr />
-    </div>
+    </TitleDiv>
   );
 }
+
+const TitleDiv = styled.div`
+  margin-top: 20px;
+`;
 
 const TitleText = styled.p`
   font-size: medium;

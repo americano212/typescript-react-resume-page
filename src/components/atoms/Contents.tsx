@@ -4,12 +4,19 @@ import styled from "styled-components";
 type ContentsTextProps = {
   children: string;
   bold?: string;
+  frontbold?: string;
 };
 
 function Contents(props: ContentsTextProps) {
   const bold = props.bold;
+  const frontbold = props.frontbold;
   return (
     <ContentsDiv>
+      {frontbold !== undefined ? (
+        <ContentsTextBold>{frontbold}</ContentsTextBold>
+      ) : (
+        <ContentsTextBold></ContentsTextBold>
+      )}
       <ContentsText>{props.children}</ContentsText>
       {bold !== undefined ? (
         <ContentsTextBold>{bold}</ContentsTextBold>
