@@ -16,12 +16,16 @@ function AboutMe() {
       <ULSmallMargin>
         <li>
           <Contents>
-            {language === "ENG" ? "I am ..." : "나는 이런 사람 입니다"}
+            {language === "ENG"
+              ? "I'm a S/W developer who wants to draw dreams with code."
+              : "저는 코드로 꿈을 그리는 사람이 되고 싶은 소프트웨어 개발자입니다."}
           </Contents>
         </li>
         <li>
           <Contents>
-            {language === "ENG" ? "I am ..." : "나는 이런 사람 입니다"}
+            {language === "ENG"
+              ? "Now I'm interested backend, which designs infrastructure and creates APIs."
+              : "현재는 인프라를 설계하고, API를 만드는 백엔드가 관심있습니다."}
           </Contents>
         </li>
       </ULSmallMargin>
