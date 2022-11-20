@@ -6,7 +6,6 @@ import { RootState } from "../store/modules";
 import TitleBox from "./atoms/TitleBox";
 import styled from "styled-components";
 import Contents from "./atoms/Contents";
-import LinkBox from "./atoms/LinkBox";
 function AboutMe() {
   const language = useSelector(
     (state: RootState) => state.setLanguage.language
@@ -16,18 +15,14 @@ function AboutMe() {
       <TitleBox title={"ABOUT ME"} />
       <ULSmallMargin>
         <li>
-          <Contents>
+          <Contents url="https://pypystory.tistory.com/" placeholder="blog">
             {language === "ENG"
               ? "I'm a S/W developer who wants to draw dreams with code."
               : "저는 코드로 꿈을 그리는 사람이 되고 싶은 소프트웨어 개발자입니다."}
           </Contents>
-          <LinkBox
-            url="https://pypystory.tistory.com/"
-            placeholder="blog"
-          ></LinkBox>
         </li>
         <li>
-          <Contents>
+          <Contents url="https://github.com/wq0212" placeholder="github">
             {language === "ENG"
               ? "Now I'm interested backend, which designs infrastructure and creates APIs."
               : "현재는 인프라를 설계하고, API를 만드는 백엔드가 관심있습니다."}

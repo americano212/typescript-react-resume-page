@@ -27,9 +27,10 @@ function Experience() {
           ? "Backend of app services, Business planning"
           : "앱 서비스 백엔드 개발, 사업 기획"}
       </SmallTitle>
+
       <ULSmallMargin>
         <li>
-          <Contents>
+          <Contents url="https://ddakzip.com/download" placeholder="link">
             {language === "ENG"
               ? "Project on 'DDAKZIP' Backend, AWS infra setting & APIs development with Typescript+GraphQL"
               : "'딱집' 프로젝트 백엔드 담당, AWS로 인프라를 세팅하고, Typescript+GraphQL로 API를 개발했습니다."}
@@ -67,7 +68,10 @@ function Experience() {
 
       <ULSmallMargin>
         <li>
-          <Contents>
+          <Contents
+            url="https://www.youtube.com/watch?v=PEMSNWi1tLM&list=PLNsZHQX7ujN8c9BRdZIPifxU1fM7hZBBh"
+            placeholder="link"
+          >
             {language === "ENG"
               ? "2021, 2022 Spring Basic Algorithms with cpp lecture (1,3,5,7 lectures)"
               : "2021년, 2022년 봄, cpp로 기초 알고리즘 강의 (1,3,5,7 lectures)"}
