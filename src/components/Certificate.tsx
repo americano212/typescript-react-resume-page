@@ -25,6 +25,26 @@ function Certificate() {
           <ContentDate>(2021.12)</ContentDate>
         </li>
       </ULSmallMargin>
+      <ULSmallMargin>
+        <li>
+          <Contents>
+            {language === "ENG"
+              ? "Industrial Engineer Information Processing"
+              : "정보처리산업기사"}
+          </Contents>
+          <ContentDate>(2022.11)</ContentDate>
+        </li>
+      </ULSmallMargin>
+      <ULSmallMargin>
+        <li>
+          <Contents>
+            {language === "ENG"
+              ? "TOPCIT (Grade III, 535 points)"
+              : "TOPCIT (수준3, 535점)"}
+          </Contents>
+          <ContentDate>(2022.12)</ContentDate>
+        </li>
+      </ULSmallMargin>
     </div>
   );
 }
