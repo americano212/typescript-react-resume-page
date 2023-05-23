@@ -26,7 +26,7 @@ function TechnicalSkill() {
       <SmallTitle>Framework</SmallTitle>
       <ULSmallMargin>
         <li>
-          <Contents frontbold="Express">, Nest.js, Django</Contents>
+          <Contents frontbold="Nest.js">, Express, Django</Contents>
         </li>
       </ULSmallMargin>
       <SmallTitle>Others</SmallTitle>
@@ -66,7 +66,7 @@ function TechnicalSkill() {
       <SmallTitle>CI/CD</SmallTitle>
       <ULSmallMargin>
         <li>
-          <Contents frontbold="Github Action">&nbsp;</Contents>
+          <Contents frontbold="Terraform, Github Action">&nbsp;</Contents>
         </li>
       </ULSmallMargin>
       {/* <SubTitle>{language === "ENG" ? "Front-End" : "프론트엔드"}</SubTitle>
