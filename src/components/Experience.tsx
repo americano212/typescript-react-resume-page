@@ -19,8 +19,8 @@ function Experience() {
       <TitleBox title={"EXPERIENCE"} />
       <SubTitle>
         {language === "ENG"
-          ? "Software Maestro 13th"
-          : "소프트웨어 마에스트로 13기"}
+          ? "Software Maestro 13th - Selected as the best person (TOP 8%)"
+          : "소프트웨어 마에스트로 13기 - 우수자 선정 (상위 8%)"}
       </SubTitle>
       <SmallTitle>
         {language === "ENG"
@@ -49,6 +49,13 @@ function Experience() {
             {language === "ENG"
               ? "Experience various parts such as project planning, design, marketing, etc"
               : "프로젝트 기획, 디자인, 마케팅 등 다양한 파트를 경험함"}
+          </Contents>
+        </li>
+        <li>
+          <Contents>
+            {language === "ENG"
+              ? "Improve performance with repectoring and automate cloud deployment with terraform when projects are over"
+              : "프로젝트가 끝났을 때, 리펙토링을 통해 성능 개선 및 테라폼으로 클라우드 배포 자동화"}
           </Contents>
         </li>
       </ULSmallMargin>
