@@ -6,9 +6,7 @@ import { toEnglish, toKorean } from "../../store/modules/language";
 import { useDispatch } from "react-redux";
 function Flag() {
   const dispatch = useDispatch();
-  const language = useSelector(
-    (state: RootState) => state.setLanguage.language
-  );
+  const language = useSelector((state: RootState) => state.setLanguage.language);
   return (
     <div>
       {language === "ENG" ? (

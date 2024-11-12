@@ -3,46 +3,20 @@ import "./App.css";
 
 import { useSelector } from "react-redux";
 import { RootState } from "./store/modules";
-import {
-  Header,
-  AboutMe,
-  Educations,
-  Experience,
-  Awards,
-  Certificate,
-  TechnicalSkill,
-} from "./components";
-import { useMediaQuery } from "react-responsive";
-import styled from "styled-components";
+import { Header, AboutMe, Educations, Experience, Awards, Certificate, TechnicalSkill } from "./components";
 
-interface AppBoxProps {
-  HorizontalMargin: string;
-}
-
-function App() {
-  const isMobile = useMediaQuery({ maxWidth: 1024 });
-  const HorizontalMargin = isMobile ? "10%" : "20%";
-
-  const language = useSelector(
-    (state: RootState) => state.setLanguage.language
-  );
+export default function App() {
+  const language = useSelector((state: RootState) => state.setLanguage.language);
 
   return (
     <div className="App">
-      <AppBox HorizontalMargin={HorizontalMargin}>
-        <Header language={language} />
-        <AboutMe />
-        <Educations />
-        <Experience />
-        <Awards />
-        <Certificate />
-        <TechnicalSkill />
-      </AppBox>
+      <Header language={language} />
+      <AboutMe />
+      <Educations />
+      <Experience />
+      <Awards />
+      <Certificate />
+      <TechnicalSkill />
     </div>
   );
 }
-const AppBox = styled.div<AppBoxProps>`
-  margin-left: ${(props) => props.HorizontalMargin};
-  margin-right: ${(props) => props.HorizontalMargin};
-`;
-export default App;
