@@ -1,5 +1,5 @@
 import TitleBox from "../components/atoms/TitleBox";
-import Contents from "../components/atoms/Contents";
+import Contents from "../components/Contents";
 import { ContentsBox } from "../styles/global";
 import { PageWrapper } from "../styles/page";
 import { Content } from "../types/content.interface";

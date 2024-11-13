@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
-import { RootState } from "../../store/modules";
-import { ContentsBoldText, ContentsLink, ContentsRegularText, DetailWrapper } from "../../styles/contents";
-import { ContentDetail } from "../../types/content.interface";
-import { Language } from "../../types/language.enum";
+import { RootState } from "../store/modules";
+import { ContentsBoldText, ContentsLink, ContentsRegularText, DetailWrapper } from "../styles/contents";
+import { ContentDetail } from "../types/content.interface";
+import { Language } from "../types/language.enum";
 
 export default function Detail(props: ContentDetail) {
   const language: Language = useSelector((state: RootState) => state.setLanguage.language);

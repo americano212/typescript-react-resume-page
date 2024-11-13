@@ -1,10 +1,10 @@
-import { Content, ContentDetail } from "../../types/content.interface";
-import { Language } from "../../types/language.enum";
+import { Content, ContentDetail } from "../types/content.interface";
+import { Language } from "../types/language.enum";
 import { useSelector } from "react-redux";
-import { RootState } from "../../store/modules";
-import { ContentsDate, ContentsWrapper, DetailLiBox, DetailUlBox, SubDescriptionText } from "../../styles/contents";
-import Subtitle from "./Subtitle";
+import { RootState } from "../store/modules";
+import { ContentsDate, ContentsWrapper, DetailLiBox, DetailUlBox, SubDescriptionText } from "../styles/contents";
 import Detail from "./Detail";
+import Subtitle from "./atoms/Subtitle";
 
 export default function Contents(props: Content) {
   const language: Language = useSelector((state: RootState) => state.setLanguage.language);
