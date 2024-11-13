@@ -1,3 +1,4 @@
+import React from "react";
 import { DescriptionText, SubtitleText, SubtitleWrapper } from "../../styles/subtitle";
 
 type SubtitleProps = {
