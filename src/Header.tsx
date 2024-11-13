@@ -1,12 +1,16 @@
 import { HeaderLeftBox, HeaderRightBox, HeaderWrapper, NameBox, TextBox } from "./styles/header";
-import { HeaderProps } from "./types/header.interface";
 import Flag from "./components/atoms/Flag";
+import { Language } from "./types/language.enum";
+import { useSelector } from "react-redux";
+import { RootState } from "./store/modules";
 
-export default function Header(props: HeaderProps) {
+export default function Header() {
+  const language: Language = useSelector((state: RootState) => state.setLanguage.language);
+
   return (
     <HeaderWrapper>
       <HeaderLeftBox>
-        <NameBox>{props.language === "ENG" ? "Dongjun Shin" : "신동준"}</NameBox>
+        <NameBox>{language === Language.eng ? "Dongjun Shin" : "신동준"}</NameBox>
         <TextBox>me@dongjun.me</TextBox>
         <TextBox>Seoul, Republic of Korea</TextBox>
       </HeaderLeftBox>

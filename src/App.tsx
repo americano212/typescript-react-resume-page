@@ -1,22 +1,15 @@
-import React from "react";
 import "./App.css";
-
-import { useSelector } from "react-redux";
-import { RootState } from "./store/modules";
-import { Header, AboutMe, Educations, Experience, Awards, Certificate, TechnicalSkill } from "./components";
+import { pageData } from "./assets/page.data";
+import Header from "./Header";
+import Page from "./pages/Page";
 
 export default function App() {
-  const language = useSelector((state: RootState) => state.setLanguage.language);
-
   return (
     <div className="App">
-      <Header language={language} />
-      <AboutMe />
-      <Educations />
-      <Experience />
-      <Awards />
-      <Certificate />
-      <TechnicalSkill />
+      <Header />
+      {pageData.map((page, index) => (
+        <Page key={index} title={page.title} contents={page.contents} />
+      ))}
     </div>
   );
 }
