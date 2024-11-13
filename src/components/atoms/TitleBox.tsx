@@ -1,36 +1,16 @@
-import React from "react";
-import styled from "styled-components";
+import { HorizontalLine, TitleBoxWrapper, TitleText } from "../../styles/title-box";
 
 type TitleBoxProps = {
   title: string;
 };
 
-function TitleBox(props: TitleBoxProps) {
+export default function TitleBox(props: TitleBoxProps) {
   const title = props.title;
   return (
-    <TitleDiv>
-      <Width100Hr />
+    <TitleBoxWrapper>
+      <HorizontalLine />
       <TitleText>{title}</TitleText>
-      <Width100Hr />
-    </TitleDiv>
+      <HorizontalLine />
+    </TitleBoxWrapper>
   );
 }
-
-const TitleDiv = styled.div`
-  margin-top: 20px;
-`;
-
-const TitleText = styled.p`
-  font-size: medium;
-  margin: 0;
-  margin-left: 10px;
-`;
-
-const Width100Hr = styled.hr`
-  width: 100%;
-  margin: 0;
-  margin-top: 2px;
-  margin-bottom: 2px;
-`;
-
-export default TitleBox;

@@ -1,4 +1,5 @@
 import { ActionType } from "typesafe-actions";
+import { Language } from "../../types/language.enum";
 
 // Actions
 const TOENG = "TOENG";
@@ -21,7 +22,7 @@ type SetLanguageAction = ActionType<typeof actions>;
 
 // 초기값 설정
 const initialState = {
-  language: "ENG",
+  language: Language.eng,
 };
 
 // counterReducer
@@ -32,11 +33,11 @@ export default function setLanguage(
   switch (action.type) {
     case TOENG:
       return {
-        language: "ENG",
+        language: Language.eng,
       };
     case TOKOR:
       return {
-        language: "KOR",
+        language: Language.kor,
       };
     default:
       return state;

@@ -1,64 +1,45 @@
-import React from "react";
-import styled from "styled-components";
+import { Content, ContentDetail } from "../../types/content.interface";
+import { Language } from "../../types/language.enum";
+import { useSelector } from "react-redux";
+import { RootState } from "../../store/modules";
+import { ContentsDate, ContentsWrapper, DetailLiBox, DetailUlBox, SubDescriptionText } from "../../styles/contents";
+import Subtitle from "./Subtitle";
+import Detail from "./Detail";
 
-type ContentsTextProps = {
-  children: string;
-  bold?: string;
-  frontbold?: string;
-  placeholder?: string;
-  url?: string;
-};
+export default function Contents(props: Content) {
+  const language: Language = useSelector((state: RootState) => state.setLanguage.language);
+  const subtitle = language === Language.eng ? props.enSubtitle : props.krSubtitle;
+  const description = language === Language.eng ? props.enDescription : props.krDescription;
 
-function Contents(props: ContentsTextProps) {
-  const bold = props.bold;
-  const frontbold = props.frontbold;
-  const url = props.url;
-  const placeholder = props.placeholder;
+  const subDescription = language === Language.eng ? props.enSubDescription : props.krSubDescription;
+  const details: ContentDetail[] = props.details;
+
   return (
-    <ContentsDiv>
-      {frontbold !== undefined ? (
-        <ContentsTextBold>{frontbold}</ContentsTextBold>
-      ) : (
-        <ContentsTextBold></ContentsTextBold>
-      )}
-      <ContentsText>{props.children}</ContentsText>
-      {bold !== undefined ? (
-        <ContentsTextBold>{bold}</ContentsTextBold>
-      ) : (
-        <ContentsTextBold></ContentsTextBold>
-      )}
-      {url !== undefined ? (
-        <ContentsText>
-          &nbsp;(
-          <LinkA href={url} target="_blank">
-            {placeholder}
-          </LinkA>
-          )
-        </ContentsText>
-      ) : (
-        <ContentsText></ContentsText>
-      )}
-    </ContentsDiv>
+    <ContentsWrapper>
+      {subtitle ? <Subtitle subtitle={subtitle} description={description} /> : <></>}
+
+      {props.date ? <ContentsDate>{props.date}</ContentsDate> : <></>}
+      {subDescription ? <SubDescriptionText>{subDescription}</SubDescriptionText> : <></>}
+      <DetailUlBox>
+        {details.map(
+          (detail, index) =>
+            detail.isDisplay && (
+              <DetailLiBox>
+                <Detail
+                  key={index}
+                  linkUrl={detail.linkUrl}
+                  linkText={detail.linkText}
+                  krText={detail.krText}
+                  enText={detail.enText}
+                  frontBold={detail.frontBold}
+                  enEndBold={detail.enEndBold}
+                  krEndBold={detail.krEndBold}
+                />
+                {detail.date ? <ContentsDate>{detail.date}</ContentsDate> : <></>}
+              </DetailLiBox>
+            )
+        )}
+      </DetailUlBox>
+    </ContentsWrapper>
   );
 }
-
-const ContentsDiv = styled.div`
-  position: absolute;
-  float: left;
-`;
-
-const ContentsText = styled.span`
-  font-size: small;
-`;
-
-const ContentsTextBold = styled.span`
-  font-size: small;
-  font-weight: bold;
-`;
-
-const LinkA = styled.a`
-  &:visited {
-    color: blue;
-  }
-`;
-export default Contents;

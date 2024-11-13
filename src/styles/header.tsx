@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const HeaderWrapper = styled.div``;
+export const HeaderWrapper = styled.div`
+  padding-bottom: 70px;
+`;
 
 export const HeaderLeftBox = styled.div`
   float: left;

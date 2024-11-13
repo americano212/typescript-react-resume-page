@@ -1,46 +1,15 @@
-import React from "react";
-import styled from "styled-components";
+import { DescriptionText, SubtitleText, SubtitleWrapper } from "../../styles/subtitle";
 
-type SubTitleProps = {
-  children: string;
-  tag?: string;
-  describtion?: string;
+type SubtitleProps = {
+  subtitle: string;
+  description?: string;
 };
 
-function SubTitle(props: SubTitleProps) {
-  const subTitle = props.children;
-  const tag = props.tag;
-  const describtion = props.describtion;
+export default function Subtitle(props: SubtitleProps) {
   return (
-    <div>
-      <SubTitleText>{subTitle}</SubTitleText>
-      {tag !== undefined ? <TagText> @ {tag}</TagText> : <TagText></TagText>}
-      {describtion !== undefined ? (
-        <DescribtionText> - {describtion}</DescribtionText>
-      ) : (
-        <DescribtionText></DescribtionText>
-      )}
-    </div>
+    <SubtitleWrapper>
+      <SubtitleText>{props.subtitle}</SubtitleText>
+      {props.description ? <DescriptionText> - {props.description}</DescriptionText> : <></>}
+    </SubtitleWrapper>
   );
 }
-
-const SubTitleText = styled.span`
-  font-weight: bold;
-  font-size: 0.9rem;
-  margin: 0;
-  margin-left: 20px;
-`;
-
-const TagText = styled.span`
-  font-weight: normal;
-  font-size: 0.9rem;
-  margin: 0;
-`;
-
-const DescribtionText = styled.span`
-  font-weight: normal;
-  font-size: 0.7rem;
-  margin: 0;
-`;
-
-export default SubTitle;
