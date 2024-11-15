@@ -47,8 +47,8 @@ export const technicalSkillData: Content[] = [
     details: [
       {
         frontBold: "Terraform, Github Action",
-        enText: "" ,
-        krText: "",
+        enText: ", Jenkins" ,
+        krText: ", Jenkins",
         isDisplay: true
       },
     ]
