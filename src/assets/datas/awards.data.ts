@@ -8,7 +8,7 @@ export const awardsData: Content[] = [
     details: [
       {
         enText: "2020 Sogang Programming Contest - " ,
-        krText: "2022 서강대학교 프로그래밍 대회 SPC - ",
+        krText: "2020 서강대학교 프로그래밍 대회 SPC - ",
         enEndBold: "A Bronze prize",
         krEndBold: "동상",
         isDisplay: true
@@ -20,6 +20,15 @@ export const awardsData: Content[] = [
     krSubtitle: "Team",
     isDisplay: true,
     details: [
+      {
+        enText: "2025 Blaybus Mobile App Hackathon - ",
+        krText: "2025 Blaybus 실전 앱 개발 경진대회 - ",
+        enEndBold:"Excellence Award",
+        krEndBold:"우수상",
+        linkText: "link",
+        linkUrl: "https://github.com/americano212/dohands-hackathon-backend",
+        isDisplay: true
+      },
       {
         enText: "2022 Winter SUAPC (Algorithm Contest) - " ,
         krText: "2022 Winter SUAPC (알고리즘 대회) - ",
