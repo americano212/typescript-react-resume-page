@@ -5,6 +5,12 @@ export const certificateData: Content[] = [
     isDisplay: true,
     details: [
       {
+        enText: "Linux Master, Grade II" ,
+        krText: "리눅스마스터 2급",
+        date: "(2024.12)",
+        isDisplay: true
+      },
+      {
         enText: "AWS Certified Solutions Architect - Associate(AWS SAA)" ,
         krText: "AWS Certified Solutions Architect - Associate(AWS SAA)",
         date: "(2024.11)",
