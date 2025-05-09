@@ -1,29 +1,42 @@
 import { Page } from "../types/page.interface";
-import { aboutMeData, awardsData, certificateData, educationsData, experienceData, technicalSkillData } from "./datas";
+import {
+  aboutMeData,
+  awardsData,
+  certificateData,
+  educationsData,
+  experienceData,
+  technicalSkillData,
+} from "./datas";
 
 export const pageData: Page[] = [
   {
     title: "ABOUT ME",
-    contents: aboutMeData
+    contents: aboutMeData,
+    isDisplay: true,
   },
   {
     title: "EDUCATIONS",
-    contents: educationsData
+    contents: educationsData,
+    isDisplay: true,
   },
   {
     title: "EXPERIENCE",
-    contents: experienceData
+    contents: experienceData,
+    isDisplay: true,
   },
   {
     title: "HONORS AND AWARDS",
-    contents: awardsData
+    contents: awardsData,
+    isDisplay: true,
   },
   {
     title: "CERTIFICATE",
-    contents: certificateData
+    contents: certificateData,
+    isDisplay: true,
   },
   {
     title: "TECHNICAL SKILLS",
-    contents: technicalSkillData
-  }
-]
+    contents: technicalSkillData,
+    isDisplay: true,
+  },
+];
