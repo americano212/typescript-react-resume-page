@@ -1,69 +1,69 @@
 import { Content } from "../../types/content.interface";
 
 export const technicalSkillData: Content[] = [
-  { 
+  {
     enSubtitle: "Language",
     krSubtitle: "Language",
     isDisplay: true,
     details: [
       {
-        frontBold: "Typescript",
-        enText: ", Python, C/C++" ,
-        krText: ", Python, C/C++",
-        isDisplay: true
+        frontBold: "C/C++, Typescript, Python",
+        enText: ", JAVA",
+        krText: ", JAVA",
+        isDisplay: true,
       },
-    ]
+    ],
   },
-  { 
+  {
     enSubtitle: "Framework",
     krSubtitle: "Framework",
     isDisplay: true,
     details: [
       {
-        frontBold: "Nest.js",
-        enText: ", Express, Django" ,
-        krText: ", Express, Django",
-        isDisplay: true
+        frontBold: "Nest.js, FastAPI, express",
+        enText: ", React, Next.js",
+        krText: ", React, Next.js",
+        isDisplay: true,
       },
-    ]
+    ],
   },
-  { 
+  {
     enSubtitle: "Database",
     krSubtitle: "Database",
     isDisplay: true,
     details: [
       {
-        frontBold: "MySQL",
-        enText: ", MongoDB, Elasticsearch" ,
-        krText: ", MongoDB, Elasticsearch",
-        isDisplay: true
+        frontBold: "MySQL, DynamoDB",
+        enText: ", Chroma, Elasticsearch",
+        krText: ", Chroma, Elasticsearch",
+        isDisplay: true,
       },
-    ]
+    ],
   },
-  { 
+  {
     enSubtitle: "CI/CD",
     krSubtitle: "CI/CD",
-    isDisplay: true,
+    isDisplay: false,
     details: [
       {
         frontBold: "Terraform, Github Action",
-        enText: ", Jenkins" ,
+        enText: ", Jenkins",
         krText: ", Jenkins",
-        isDisplay: true
+        isDisplay: false,
       },
-    ]
+    ],
   },
-  { 
+  {
     enSubtitle: "Others",
     krSubtitle: "Others",
     isDisplay: true,
     details: [
       {
-        frontBold: "AWS, Docker",
-        enText: ", Git, Selenium" ,
-        krText: ", Git, Selenium",
-        isDisplay: true
+        frontBold: "AWS, Docker, Terraform",
+        enText: ", Github Action, Jenkins, Git, Selenium",
+        krText: ", Github Action, Jenkins, Git, Selenium",
+        isDisplay: true,
       },
-    ]
+    ],
   },
-]
+];

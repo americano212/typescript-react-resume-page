@@ -7,9 +7,12 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      {pageData.map((page, index) => (
-        <Page key={index} title={page.title} contents={page.contents} />
-      ))}
+      {pageData.map(
+        (page, index) =>
+          page.isDisplay && (
+            <Page key={index} title={page.title} contents={page.contents} />
+          )
+      )}
     </div>
   );
 }

@@ -5,6 +5,7 @@ import {
   certificateData,
   educationsData,
   experienceData,
+  projectsData,
   technicalSkillData,
 } from "./datas";
 
@@ -39,4 +40,5 @@ export const pageData: Page[] = [
     contents: technicalSkillData,
     isDisplay: true,
   },
+  { title: "PROJECTS", contents: projectsData, isDisplay: false },
 ];
