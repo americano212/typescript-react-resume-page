@@ -30,6 +30,7 @@ export const pageData: Page[] = [
     contents: awardsData,
     isDisplay: true,
   },
+  { title: "PROJECTS", contents: projectsData, isDisplay: true },
   {
     title: "CERTIFICATE",
     contents: certificateData,
@@ -40,5 +41,4 @@ export const pageData: Page[] = [
     contents: technicalSkillData,
     isDisplay: true,
   },
-  { title: "PROJECTS", contents: projectsData, isDisplay: false },
 ];
