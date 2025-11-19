@@ -5,6 +5,7 @@ import {
   certificateData,
   educationsData,
   experienceData,
+  organizationsAndActivitesData,
   projectsData,
   technicalSkillData,
 } from "./datas";
@@ -31,6 +32,11 @@ export const pageData: Page[] = [
     isDisplay: true,
   },
   { title: "PROJECTS", contents: projectsData, isDisplay: true },
+  {
+    title: "ORGANIZATIONS AND ACTIVITES",
+    contents: organizationsAndActivitesData,
+    isDisplay: true,
+  },
   {
     title: "CERTIFICATE",
     contents: certificateData,

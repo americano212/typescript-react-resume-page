@@ -5,6 +5,7 @@ import { awardsData } from "./awards.data";
 import { certificateData } from "./certificate.data";
 import { technicalSkillData } from "./technical-skill.data";
 import { projectsData } from "./projects.data";
+import { organizationsAndActivitesData } from "./organizations-and-activates.data";
 
 export {
   aboutMeData,
@@ -14,4 +15,5 @@ export {
   certificateData,
   technicalSkillData,
   projectsData,
+  organizationsAndActivitesData,
 };
