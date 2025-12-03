@@ -5,8 +5,8 @@ export const certificateData: Content[] = [
     isDisplay: true,
     details: [
       {
-        enText: "TOPCIT (Grade IV, 693 points)",
-        krText: "TOPCIT (수준4, 693점)",
+        enText: "TOPCIT (Grade IV, 697 points)",
+        krText: "TOPCIT (수준4, 697점)",
         date: "(2025.12)",
         isDisplay: true,
       },
