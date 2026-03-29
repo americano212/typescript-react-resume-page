@@ -2,6 +2,35 @@ import { Content } from "../../types/content.interface";
 
 export const experienceData: Content[] = [
   {
+    enSubtitle: "Karrot (Danggeun) - Backend Intern",
+    krSubtitle: "당근 - 백엔드 인턴",
+    enSubDescription: "Operations Development Team, Operations ML Part",
+    krSubDescription: "운영개발팀 운영ML 파트",
+    isDisplay: true,
+    details: [
+      {
+        enText:
+          "LLM cost optimization & Agent/Tool call flow tracing in Multi-Agent environment",
+        krText:
+          "Multi-Agent 환경에서 LLM 비용최적화 및 Agent/Tool 호출 흐름 추적 기능 개발",
+        date: "(25.12 ~ 26.03)",
+        isDisplay: true,
+      },
+      {
+        enText:
+          "Developed Karrot Community-Group·Apartment CS Agent (customer service chatbot)",
+        krText: "당근 모임·아파트 CS Agent(고객센터 챗봇) 개발",
+        isDisplay: true,
+      },
+      {
+        enText:
+          "Built vector DB & designed architecture for long-term memory integration",
+        krText: "Long-term memory 도입을 위한 vector DB 구축 & 아키텍처 설계",
+        isDisplay: true,
+      },
+    ],
+  },
+  {
     enSubtitle: "Software Maestro 13th - Selected as the best person (TOP 8%)",
     krSubtitle: "소프트웨어 마에스트로 13기 - 우수자 선정 (상위 8%)",
     enSubDescription: "Backend of app services, Business planning",
